@@ -14,3 +14,19 @@ body{
 .result{
     text-align: left;
 }
+
+#popupLbl{
+    width: 340px;
+    text-align: center;
+    padding: 1px;
+    border: 2px solid green;
+    background-color:PaleGreen;
+    color:black;
+    font-size: 14px;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+.hidden{
+    visibility: hidden;
+}

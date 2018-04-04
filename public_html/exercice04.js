@@ -1,7 +1,11 @@
+//Creation du fichier JSON
 var data = {items: [
 ]};
 
 function exo04_addToBasket(){
+    
+    //Index l'item concerne
+    var indexItem = 0;
     
     //Recupere la nouvelle valeur    
     var nom = document.getElementById("exo04_item").value;
@@ -14,14 +18,22 @@ function exo04_addToBasket(){
         if(data.items[i].name === nom){
             data.items[i].quantity++;
             flag = true;
+            indexItem = i;
         }
     }
     
+    //Si elle n'existe pas on l'ajoute au JSON avec une quantité de 1
     if(flag === false){
         addItem(nom,1);
+        indexItem = (data.items.length) - 1;
     }
     
+    //MAJ de la vue
     majVue4();
+    
+    //Affichage du popup
+    showPopUp(indexItem);
+    
 }
 
 function addItem(nom,quantite){
@@ -68,4 +80,30 @@ function remove(index){
     }
     
     majVue4();
+}
+
+function showPopUp(index){
+    
+    //Message à renvoyer
+    var message = "";
+    
+    var item = data.items[index];
+    
+    if(item.quantity > 1){
+        message = "La quantité du produit " + item.name  + " a été mise à jour";
+    }else{
+        message = "Le produit " + item.name  + " a été ajouté à votre panier";
+    }
+    
+    document.getElementById("popupLbl").value = message;
+    
+    document.getElementById("popupLbl").classList.remove("hidden");
+    
+    setTimeout(function(){ document.getElementById("popupLbl").classList.add("hidden"); }, 1500);
+
+}
+
+function removePop(){
+   alert("toto");
+     document.getElementById("popupLbl").classList.add("hidden");
 }
