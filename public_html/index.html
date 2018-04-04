@@ -14,32 +14,83 @@
             
             <!-- EXERCICE 1-->
             <div class="row exercice">
-                <h1>Exercice 1</h1>
-                <br>
-                <input type="text" id="exo01_item">
-                <button type="button" class="btn btn-outline-success" onclick="exo01_addToBasket()">Ajouter</button>
-                <p class="description"></p>
-                <div id="exo01_basket"></div>
+                    <div class="col">
+                         <h1>Exercice 1</h1>
+                    </div>
+                     <div class="w-100"></div> 
+                     
+                    <div class="col">
+                         <input type="text" id="exo01_item">
+                         <button type="button" class="btn btn-outline-success btn-sm" onclick="exo01_addToBasket()">Ajouter</button>
+                         <br>
+                         <br>
+                         <p class="description">Ajout simple des items, sans vérification</p>
+                    </div>
+                    
+                    <div class="col">
+                         <div class= "result" id="exo01_basket"></div>
+                    </div>
             </div>
+
             
             <!-- EXERCICE 2-->
             <div class="row exercice">
-                <h1>Exercice 2</h1>
-                <br>
-                <input type="text" id="exo02_item">
-                <button type="button" class="btn btn-outline-success" onclick="exo02_addToBasket()">Ajouter</button>
-                <p class="description"></p>
-                <ul id="exo02_basket"></ul>
+                    <div class="col">
+                         <h1>Exercice 2</h1>
+                    </div>
+                     <div class="w-100"></div> 
+                     
+                    <div class="col">
+                         <input type="text" id="exo02_item">
+                         <button type="button" class="btn btn-outline-success btn-sm" onclick="exo02_addToBasket()">Ajouter</button>
+                         <br>
+                         <br>
+                         <p class="description">Ajout des items, pas de doublons</p>
+                    </div>
+                    
+                    <div class="col">
+                         <div class= "result" id="exo02_basket"></div>
+                    </div>
             </div>
             
             <!-- EXERCICE 3-->
             <div class="row exercice">
-                <h1>Exercice 3</h1>
-                <br>
-                <input type="text" id="exo03_item">
-                <button type="button" class="btn btn-outline-success" onclick="exo03_addToBasket()">Ajouter</button>
-                <p class="description"></p>
-                <ul id="exo03_basket"></ul>
+                    <div class="col">
+                         <h1>Exercice 3</h1>
+                    </div>
+                     <div class="w-100"></div> 
+                     
+                    <div class="col">
+                         <input type="text" id="exo03_item">
+                         <button type="button" class="btn btn-outline-success btn-sm" onclick="exo03_addToBasket()">Ajouter</button>
+                         <br>
+                         <br>
+                         <p class="description">Ajout des items,avec quantités, boutons pour les modifier</p>
+                    </div>
+                    
+                    <div class="col">
+                         <div class= "result" id="exo03_basket"></div>
+                    </div>
+            </div>
+            
+            <!-- EXERCICE 4-->
+            <div class="row exercice">
+                    <div class="col">
+                         <h1>Exercice 4</h1>
+                    </div>
+                     <div class="w-100"></div> 
+                     
+                    <div class="col">
+                         <input type="text" id="exo04_item">
+                         <button type="button" class="btn btn-outline-success btn-sm" onclick="exo04_addToBasket()">Ajouter</button>
+                         <br>
+                         <br>
+                         <p class="description">Utilisation JSON</p>
+                    </div>
+                    
+                    <div class="col">
+                         <div class= "result" id="exo04_basket"></div>
+                    </div>
             </div>
             
         </div>
@@ -47,4 +98,5 @@
     <script type="text/javascript" src="./exercice01.js"></script>
     <script type="text/javascript" src="./exercice02.js"></script>
     <script type="text/javascript" src="./exercice03.js"></script>
+    <script type="text/javascript" src="./exercice04.js"></script>
 </html>
